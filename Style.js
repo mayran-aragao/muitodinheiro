@@ -24,7 +24,7 @@ export const Text = styled.Text`
 export const ClientInput = styled.TextInput`
   width:100%;
   height:50px;
-  border: 1px solid #000;
+  border: 1px solid #4169E1FF;
   border-radius:10px;
   padding-left:20px;
   margin-top:10px;
@@ -38,31 +38,30 @@ export const ContentBox = styled.View`
   justify-content:space-between;
   margin-bottom:5px;
 `;
-export const BoxDate = styled.View`
-  width:35%;
-  padding-left:10px;
+export const BoxDate = styled.TextInput`
+  width:45%;
   justify-content:center;
+  text-align:center;
   border-radius:10px;
   margin-top:10px;
-  border: 1px solid #000;
+  border: 1px solid #4169E1FF;
 `;
 export const TaxBox = styled.TextInput`
   width:45%;
   height:50px;
-  border: 1px solid #000;
-  align-items:center;
+  border: 1px solid #4169E1FF;
+  text-align:center;
   justify-content:center;
   border-radius:10px;
   margin-top:10px;
   padding:10px;
 `;
-export const DateText = styled.Text``;
 export const BoxChange = styled.View`
   flex-direction:row;
   flex-wrap:wrap;
   width:100%;
   height:200px;
-  border: 1px solid #000;
+  border: 1px solid #4169E1FF;
   border-radius:10px;
   margin-top:10px;
   justify-content:center;
@@ -70,7 +69,7 @@ export const BoxChange = styled.View`
 export const CoinInput = styled.View`
   width:30%;
   height:50px;
-  border: 1px solid #000;
+  border: 1px solid #4169E1FF;
   border-radius:10px;
   margin-top:10px;
   justify-content:center;
@@ -81,7 +80,7 @@ export const CoinInput = styled.View`
 export const ValorInput = styled.TextInput`
   width:60%;
   height:50px;
-  border: 1px solid #000;
+  border: 1px solid #4169E1FF;
   border-radius:10px;
   margin-top:10px;
   padding:10px;
@@ -108,12 +107,12 @@ export const CotaInput = styled.TextInput`
   justify-content:center;
   border-radius:10px;
   margin-top:10px;
-  border: 1px solid #000;
+  border: 1px solid #4169E1FF;
 `;
 export const TaxaView = styled.View`
     width:30%;
     height:50px;
-    border: 1px solid #000;
+    border: 1px solid #4169E1FF;
     align-self:flex-start;
     border-radius:10px;
     margin-top:10px;
@@ -131,7 +130,7 @@ export const Botao = styled.TouchableHighlight`
 export const SearchInput = styled.TextInput`
   width:100%;
   height:50px;
-  border: 1px solid #000;
+  border: 1px solid #4169E1FF;
   border-radius:10px;
   padding-left:20px;
   margin-top:10px;
@@ -139,14 +138,14 @@ export const SearchInput = styled.TextInput`
 `;
 export const OperationScroll = styled.ScrollView`
     width:100%;
-    height:65%;
+    height:60%;
     margin-top:10px;
 `;
 export const OperationBox = styled.View`
     width:100%;
     height:200px;
     background-color:#eee;
-    border: 1px solid #000;
+    border: 1px solid #4169E1FF;
     margin-top:5px;
     border-radius:10px;
 `;
@@ -167,4 +166,26 @@ export const Label = styled.Text`
 export const LabelValue = styled.Text`
     padding-bottom:10px;
     
+`;
+export const FilterButton = styled.TouchableHighlight`
+    width:40px;
+    height:40px;
+    background-color:#4169E1FF;
+    border-radius:20px;
+    justify-content:center;
+    align-items:center;
+    margin-top:10px;
+`;
+export const DateInput = styled.TextInput`
+  width:30%;
+  justify-content:center;
+  text-align:center;
+  border-radius:10px;
+  margin-top:10px;
+  border: 1px solid #4169E1FF;
+  background-color:#eee;
+`;
+export const FindImage = styled.Image`
+  width:50px;
+  height:50px;
 `;

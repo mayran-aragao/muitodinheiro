@@ -1,6 +1,7 @@
 import React from 'react';
-import { Modal, Platform } from 'react-native';
+import { Modal, Platform ,StatusBar} from 'react-native';
 import styled from 'styled-components/native';
+
 
 const ModalBoxArea = styled.KeyboardAvoidingView`
     flex:1;
@@ -9,8 +10,8 @@ const ModalBoxArea = styled.KeyboardAvoidingView`
     align-items:center;
 `;
 const ModalBox = styled.View`
-    width:95%;
-    height:90%;
+    width:100%;
+    height:100%;
     padding:20px;
     background-color: #ccc;
 `;
@@ -27,6 +28,9 @@ const ModalBody = styled.View``;
 export default (props) => {
     return(
         <Modal visible={props.visible} transparent={true} animationType="fade">
+            <StatusBar
+                backgroundColor="#ccc"
+            />
             <ModalBoxArea behavior = {Platform.OS=='ios'?'padding':null}>
                 <ModalBox>
                     <ModalClose onPress={props.closeAction} underlayColor="transparent">
